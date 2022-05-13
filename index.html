@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <h1>Juego del ahorcado</h1>
+    <p>Encuentra la palabla - Ingresa las letras correctas</p>
+    <canvas id="figura"></canvas>
+    <div class="game-container">
+        <div class="wrong-letters-container">
+            <div id="wrong-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+    </div>
+
+    <!-- Mensaje final -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+            <button id="play-button">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <!-- Notificacion letra repetida -->
+    <div class="notification-container" id="notification-container">
+        <p>Ya ingresaste esa letra</p>
+    </div>
+
+    <script src="/js/ahorcado.js"></script>
+</body>
+</html>
